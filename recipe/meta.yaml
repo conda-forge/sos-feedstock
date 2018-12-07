@@ -23,18 +23,15 @@ requirements:
     - python >=3.6
   run:
     - fasteners
-    - imageio
     - jinja2
     - nbformat
     - networkx
     - pexpect
-    - pillow
     - psutil
     - pydot
     - pydotplus
     - pygments
     - python >=3.6
-    - python-graphviz
     - python-xxhash
     - pyyaml
     - pyzmq
