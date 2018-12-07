@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - sos=sos.__main__:main
     - sos-runner=sos.__main__:sosrunner
@@ -23,15 +23,19 @@ requirements:
     - python >=3.6
   run:
     - fasteners
+    - imageio
     - jinja2
     - nbformat
     - networkx
     - pexpect
+    - pillow
     - psutil
     - pydot
     - pydotplus
     - pygments
     - python >=3.6
+    - python-graphviz
+    - python-xxhash
     - pyyaml
     - pyzmq
     - setuptools
