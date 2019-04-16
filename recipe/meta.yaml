@@ -1,5 +1,5 @@
 {% set name = "sos" %}
-{% set version = "0.19.6" %}
+{% set version = "0.19.7" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c4da31112ec157de2e89545a7120b9e97ec9096c9f429d2fb45b994dffff0e2c
+  sha256: edbacb6dbc31fa074ddfc7ddb456f409dd171f3af926bc4ce14ff26e934160cb
 
 build:
   noarch: python
