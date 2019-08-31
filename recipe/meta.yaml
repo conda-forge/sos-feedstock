@@ -27,6 +27,7 @@ requirements:
     - nbformat
     - networkx
     - pexpect
+    - ptyprocess
     - psutil
     - pydot
     - pydotplus
