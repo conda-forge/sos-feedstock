@@ -146,6 +146,7 @@ Feedstock Maintainers
 =====================
 
 * [@BoPeng](https://github.com/BoPeng/)
+* [@danielnachun](https://github.com/danielnachun/)
 * [@gaow](https://github.com/gaow/)
 * [@jdblischak](https://github.com/jdblischak/)
 
