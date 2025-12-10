@@ -24,6 +24,7 @@ requirements:
   host:
     - pip
     - python =${{ python_min }}
+    - setuptools
   run:
     - fasteners
     - jinja2
