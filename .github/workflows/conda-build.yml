@@ -130,4 +130,3 @@ jobs:
         BINSTAR_TOKEN: ${{ secrets.BINSTAR_TOKEN }}
         FEEDSTOCK_TOKEN: ${{ secrets.FEEDSTOCK_TOKEN }}
         STAGING_BINSTAR_TOKEN: ${{ secrets.STAGING_BINSTAR_TOKEN }}
->>>>>>> 30d2cdc (MNT: Re-rendered with conda-smithy 2026.9.1 and conda-forge-pinning 2026.09.09.20.21.58)
