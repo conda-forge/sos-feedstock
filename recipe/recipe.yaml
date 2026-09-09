@@ -48,13 +48,17 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - sos
         - sos.docker
         - sos.singularity
   - requirements:
       run:
-        - python =${{ python_min }}
+        - python ${{ python_min }}.*
+        - python *
     script:
       - sos --help
       - sos-runner --help
