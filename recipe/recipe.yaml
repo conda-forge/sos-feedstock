@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.25.1
+  version: 0.25.2
 
 package:
   name: sos
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/sos/sos-${{ version }}.tar.gz
-  sha256: 5f5bedbf516567ed81e6f6cc4ca5130e404df708e5f2ba2430ab843c8fd1c10e
+  sha256: ac67926617f7dc0224940d0a33132895728a081c598c1e7460c584a846ef2e1c
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
   python:
@@ -24,13 +24,16 @@ requirements:
   host:
     - pip
     - python =${{ python_min }}
+    - hatchling
     - setuptools
   run:
     - fasteners
     - jinja2
     - nbformat
     - networkx
+    - packaging
     - pexpect
+    - pillow
     - ptyprocess
     - psutil
     - pydot
@@ -45,13 +48,17 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - sos
         - sos.docker
         - sos.singularity
   - requirements:
       run:
-        - python =${{ python_min }}
+        - python ${{ python_min }}.*
+        - python *
     script:
       - sos --help
       - sos-runner --help
